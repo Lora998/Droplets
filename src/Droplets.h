@@ -8,11 +8,9 @@ class Droplets {
    Droplets(double, double, double );			// allg. Konstruktor
    Droplets(const Droplets&);					// Kopierkonstruktor
    ~Droplets();									// Destruktor
-   inline double getX(){return x;}
-   inline double getY(){return y;}
-   inline double getA(){return a;}
-
-
+   inline double getX() const {return x;}
+   inline double getY() const {return y;}
+   inline double getA() const {return a;}
   private:
    double x;							// x-Koordinate
    double y;							// y-Koordinate
