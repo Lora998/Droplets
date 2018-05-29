@@ -21,5 +21,5 @@ class Droplets {
 };
 
 std::ostream &operator<<(std::ostream &, const Droplets&);
-
+static const double operator-(const Point &, const Point &);
 #endif

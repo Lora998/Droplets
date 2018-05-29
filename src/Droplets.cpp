@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cmath>
 #include "Droplets.h"
 
 /* Konstruktoren */
@@ -15,4 +16,9 @@ Droplets::Droplets(const Droplets& c){
 std::ostream &operator<<(std::ostream & os, const Droplets& d){
 	return os << "( x=" << d.getX() <<" ; y=" << d.getY() <<
 			" ; area="<<d.getA();
+}
+
+static const double operator-(const Point & a, const Point & b){
+	return (std::sqrt(std::pow(a.getX()-b.getX(), 2) +
+			std::pow(a.getY()-b.getY(), 2)));
 }
