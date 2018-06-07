@@ -7,7 +7,7 @@ class Droplets {
    Droplets();									// default constructor
    Droplets(double, double, double );			// general constructor
    Droplets(const Droplets&);					// copy constructor
-   ~Droplets();									// destructor
+
    inline double getX() const {return x;}
    inline double getY() const {return y;}
    inline double getA() const {return a;}
