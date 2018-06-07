@@ -10,19 +10,19 @@
 
 class Area {
   public:
-   Area(){}										// Default-Konstruktor
-   Area(unsigned int, double, double );			// allg. Konstruktor
-   Droplets(const Droplets&);					// Kopierkonstruktor
-   ~Droplets();									// Destruktor
+   Area(){}										// default constructor
+   Area(unsigned int, double, double );			// general constructor
+   Droplets(const Droplets&);					// copy constructor
+   ~Droplets();									// destructor
    inline double getX() const {return x;}
    inline double getY() const {return y;}
    inline double getA() const {return a;}
   private:
-   unsigned int;
+   unsigned int n;								// number of points
+   double
 
-   /*
-    * x, y und A muessen groesser, gleich 0 sein
-    */
+
+
 };
 
 

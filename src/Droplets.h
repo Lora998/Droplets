@@ -4,19 +4,22 @@
 
 class Droplets {
   public:
-   Droplets();									// Default-Konstruktor
-   Droplets(double, double, double );			// allg. Konstruktor
-   Droplets(const Droplets&);					// Kopierkonstruktor
-   ~Droplets();									// Destruktor
+   Droplets();									// default constructor
+   Droplets(double, double, double );			// general constructor
+   Droplets(const Droplets&);					// copy constructor
+   ~Droplets();									// destructor
    inline double getX() const {return x;}
    inline double getY() const {return y;}
    inline double getA() const {return a;}
+   inline double getRadian() const {return r;}
   private:
-   double x;							// x-Koordinate
-   double y;							// y-Koordinate
-   double a;							// Flaeche
+   double x;							// x-coord
+   double y;							// y-coord
+   double a;							// area
+   double r;							// radian
+
    /*
-    * x, y und A muessen groesser, gleich 0 sein
+    * x, y and a have to be greater than 0
     */
 };
 
