@@ -35,6 +35,8 @@ endif
 
 -include ../makefile.defs
 
+CXXFLAGS=-std=c++11
+
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
