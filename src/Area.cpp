@@ -93,7 +93,7 @@ Area::void distributeDroplets(){
 	}
 }
 
-bool isValidDroplet(const &Droplets d){
+Area::bool isValidDroplet(const &Droplets d){
 	/*
 	 * a valid droplet has to fulfil all the given arguments
 	 */

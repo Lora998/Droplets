@@ -16,9 +16,9 @@ class Area {
    Area();										// default constructor
    Area(unsigned int, double, double, double, double, double, double,
 		   double, double, double, double);		// general constructor
-   inline double getX() const {return x;}
-   inline double getY() const {return y;}
-   inline double getA() const {return a;}
+   inline double getWidth() const {return width;}
+   inline double getHeight() const {return height;}
+   inline std::vector<Droplets> getDroplets() const {return droplets;}
   private:
    unsigned int n;								// number of points
    double width;
@@ -34,9 +34,10 @@ class Area {
    std::vector<Droplets> droplets;
 
    void distributeDroplets();
+   bool isValidDroplet(const Droplets &);
 };
 
-bool isValidDroplet(const &Droplets);
+
 
 
 #endif /* AREA_H_ */

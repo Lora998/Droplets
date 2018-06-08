@@ -1,6 +1,7 @@
 
 #ifndef DROPLETS_H
 #define DROPLETS_H
+#include<iostream>
 
 class Droplets {
   public:
@@ -26,5 +27,5 @@ class Droplets {
 };
 
 std::ostream &operator<<(std::ostream &, const Droplets&);
-static const double getDistance(const Point &, const Point &);
+static const double getDistance(const Droplets &, const Droplets &);
 #endif

@@ -26,7 +26,7 @@ std::ostream &operator<<(std::ostream & os, const Droplets& d){
 			" ; area="<<d.getA() << " ; angle = " << d.getAngle() << " )" ;
 }
 
-static const double getDistance(const Point & a, const Point & b){
+static const double getDistance(const Droplets & a, const Droplets & b){
 	return (std::sqrt(std::pow(a.getX()-b.getX(), 2) +
 			std::pow(a.getY()-b.getY(), 2)));
 }
